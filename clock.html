@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Elevenplus Practice - Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Clock</div>
+      <div class="question">
+        <canvas
+          id="clock"
+          width="300"
+          height="300"
+          style="background-color: whitesmoke"
+        ></canvas>
+        <div class="pm">PM</div>
+      </div>
+
+      <div class="answer answer2">
+        <div class="answerinput answerinput1"></div>
+        <div class="answerinput">:</div>
+        <div class="answerinput answerinput2"></div>
+      </div>
+      <div class="buttons buttons-n">
+        <button class="btn-n">0</button>
+        <button class="btn-n">1</button>
+        <button class="btn-n">2</button>
+        <button class="btn-n">3</button>
+        <button class="btn-n">4</button>
+        <button class="btn-n">5</button>
+        <button class="btn-n">6</button>
+        <button class="btn-n">7</button>
+        <button class="btn-n">8</button>
+        <button class="btn-n">9</button>
+        <button class="btn-n">.</button>
+        <button class="btn-n">Clear</button>
+      </div>
+
+      <div class="scores">
+        <div class="correct">
+          <h3>Correct</h3>
+          <h3 class="correctscore">0</h3>
+        </div>
+        <div class="wrong">
+          <h3>Wrong</h3>
+          <h3 class="wrongscore">0</h3>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a href="./index.html" class="btn">Home</a>
+      </div>
+    </div>
+
+    <script src="./clock.js"></script>
+  </body>
+</html>
