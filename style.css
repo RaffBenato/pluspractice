@@ -256,6 +256,19 @@ a {
   color: white;
 }
 
+.buttons-expand {
+  flex-direction: column;
+  padding-right: 30px;
+}
+.btn-expand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-expandsub {
+  margin-top: 20px;
+  width: 60%;
+}
 .segment {
   background-color: whitesmoke;
   border-radius: 10px;

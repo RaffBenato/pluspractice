@@ -7,10 +7,19 @@ const btnline3 = document.querySelector(`.btn-line3`);
 const btnlinex = document.querySelector(`.btn-linex`);
 const menu = document.querySelector(`.menu`);
 
+const btnAddition = document.querySelector(`.btnAddition`);
+const btnAdditionSub = document.querySelectorAll(`.btnAdditionsub`);
+
 menubtn.addEventListener("click", () => {
   btnline1.classList.toggle(`open`);
   btnline2.classList.toggle(`open`);
   btnline3.classList.toggle(`open`);
   btnlinex.classList.toggle(`open`);
   menu.classList.toggle(`open`);
+});
+
+btnAddition.addEventListener("click", () => {
+  btnAdditionSub.forEach((sub) => {
+    sub.classList.toggle(`hidden`);
+  });
 });
