@@ -10,6 +10,9 @@ const menu = document.querySelector(`.menu`);
 const btnAddition = document.querySelector(`.btnAddition`);
 const btnAdditionSub = document.querySelectorAll(`.btnAdditionsub`);
 
+const btnSubtraction = document.querySelector(`.btnSubtraction`);
+const btnSubtractionSub = document.querySelectorAll(`.btnSubtractionsub`);
+
 menubtn.addEventListener("click", () => {
   btnline1.classList.toggle(`open`);
   btnline2.classList.toggle(`open`);
@@ -20,6 +23,12 @@ menubtn.addEventListener("click", () => {
 
 btnAddition.addEventListener("click", () => {
   btnAdditionSub.forEach((sub) => {
+    sub.classList.toggle(`hidden`);
+  });
+});
+
+btnSubtraction.addEventListener("click", () => {
+  btnSubtractionSub.forEach((sub) => {
     sub.classList.toggle(`hidden`);
   });
 });
