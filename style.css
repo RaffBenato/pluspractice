@@ -109,9 +109,14 @@ body {
   color: whitesmoke;
 }
 
-p {
+h2 {
   margin: 40px;
   margin-top: 90px;
+}
+
+p {
+  margin: 40px;
+  margin-top: 20px;
   line-height: 1.4;
 }
 
