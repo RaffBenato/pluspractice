@@ -34,8 +34,16 @@ body {
   justify-content: space-between;
 }
 
+.headerin {
+  flex-direction: column;
+}
+
 .logo {
   width: 60%;
+}
+
+.logoin {
+  width: 100%;
 }
 
 .menubtn {
