@@ -360,6 +360,7 @@ a {
   cursor: pointer;
   border-radius: 10px;
   font-size: 1.2rem;
+  color: black;
 
   display: inline-block;
   font-weight: bold;
