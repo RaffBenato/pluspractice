@@ -270,6 +270,7 @@ a {
 .btn-expandsub {
   margin-top: 20px;
   width: 40%;
+  line-height: 1;
 }
 .segment {
   background-color: whitesmoke;
