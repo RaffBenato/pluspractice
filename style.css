@@ -257,7 +257,6 @@ a {
 }
 
 .buttons-expand {
-  padding-right: 30px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -413,5 +412,17 @@ a {
 
   .btn-linex.open {
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrong {
+    margin: 0px;
+  }
+  .time {
+    margin-left: 5px;
+  }
+  .correct {
+    margin-right: 5px;
   }
 }
