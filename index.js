@@ -13,6 +13,9 @@ const btnAdditionSub = document.querySelectorAll(`.btnAdditionsub`);
 const btnSubtraction = document.querySelector(`.btnSubtraction`);
 const btnSubtractionSub = document.querySelectorAll(`.btnSubtractionsub`);
 
+const btnTimes = document.querySelector(`.btnTimes`);
+const btnTimesSub = document.querySelectorAll(`.btnTimessub`);
+
 menubtn.addEventListener("click", () => {
   btnline1.classList.toggle(`open`);
   btnline2.classList.toggle(`open`);
@@ -29,6 +32,12 @@ btnAddition.addEventListener("click", () => {
 
 btnSubtraction.addEventListener("click", () => {
   btnSubtractionSub.forEach((sub) => {
+    sub.classList.toggle(`hidden`);
+  });
+});
+
+btnTimes.addEventListener("click", () => {
+  btnTimesSub.forEach((sub) => {
     sub.classList.toggle(`hidden`);
   });
 });

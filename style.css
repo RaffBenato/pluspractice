@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-  width: 60%;
+  width: 80%;
 }
 
 .logoin {
@@ -139,6 +139,7 @@ p {
   text-align: center;
   font-size: 1.4rem;
   font-weight: bolder;
+  overflow: hidden;
 }
 
 .answer {
@@ -399,10 +400,6 @@ a {
   }
   .meaning {
     color: antiquewhite;
-  }
-
-  .logo {
-    width: 70%;
   }
 
   .menubtn {

@@ -8,14 +8,37 @@ const timerEl = document.querySelector(`.timedisplay`);
 const answerinputEl = document.querySelector(`.answerinput`);
 const btnsNumbersEl = document.querySelectorAll(`.btn-n`);
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const time = parseInt(urlParams.get("time"));
+const numb1 = urlParams.get("numb1").split(",");
+const numb2 = parseInt(urlParams.get("numb2"));
+let firstNumbers = numb1;
+let secondNumbers = [];
+
+timerEl.textContent = time;
+
 let answer;
 let correctScore = 0;
 let wrongScore = 0;
 let t;
 
 function startRound() {
-  num1El.textContent = Math.floor(Math.random() * (13 - 2) + 2);
-  num2El.textContent = Math.floor(Math.random() * (13 - 2) + 2);
+  if (numb2 === 12) {
+    secondNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  } else {
+    secondNumbers = [
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    ];
+  }
+
+  let firstNumber =
+    firstNumbers[Math.floor(Math.random() * firstNumbers.length)];
+  let secondNumber =
+    secondNumbers[Math.floor(Math.random() * secondNumbers.length)];
+
+  num1El.textContent = firstNumber;
+  num2El.textContent = secondNumber;
   answerinputEl.textContent = ``;
   answer = Number(num1El.textContent) * Number(num2El.textContent);
 
@@ -49,7 +72,7 @@ let delta;
 let timer;
 function myTimer() {
   delta = Date.now() - t;
-  timer = 10 - Math.floor(delta / 1000);
+  timer = time - Math.floor(delta / 1000);
   timerEl.textContent = timer;
 
   if (timer === 0) {
