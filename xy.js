@@ -14,8 +14,8 @@ function pickCoords() {
   const xyValues = [];
 
   for (let i = 0; i < 4; i++) {
-    const xNumber = Math.floor(Math.random() * (11 - 1) + 1);
-    const yNumber = Math.floor(Math.random() * (11 - 1) + 1);
+    const xNumber = Math.floor(Math.random() * (10 - 1) + 1);
+    const yNumber = Math.floor(Math.random() * (10 - 1) + 1);
     xyValues.push([{ x: xNumber, y: yNumber }]);
   }
   answer = xyValues[0];
@@ -56,11 +56,11 @@ function pickCoords() {
       scales: {
         y: {
           suggestedMin: 0,
-          suggestedMax: 10,
+          suggestedMax: 9,
         },
         x: {
           suggestedMin: 0,
-          suggestedMax: 10,
+          suggestedMax: 9,
         },
       },
     },
