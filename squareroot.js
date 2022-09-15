@@ -8,6 +8,11 @@ const timerEl = document.querySelector(`.timedisplay`);
 const answerinputEl = document.querySelector(`.answerinput`);
 const btnsNumbersEl = document.querySelectorAll(`.btn-n`);
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const time = parseInt(urlParams.get("time"));
+timerEl.textContent = time;
+
 let answer;
 let correctScore = 0;
 let wrongScore = 0;
@@ -49,7 +54,7 @@ let delta;
 let timer;
 function myTimer() {
   delta = Date.now() - t;
-  timer = 10 - Math.floor(delta / 1000);
+  timer = time - Math.floor(delta / 1000);
   timerEl.textContent = timer;
 
   if (timer === 0) {

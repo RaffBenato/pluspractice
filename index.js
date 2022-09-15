@@ -19,6 +19,9 @@ const btnTimesSub = document.querySelectorAll(`.btnTimessub`);
 const btnDivision = document.querySelector(`.btnDivision`);
 const btnDivisionSub = document.querySelectorAll(`.btnDivisionsub`);
 
+const btnPowers = document.querySelector(`.btnPowers`);
+const btnPowersSub = document.querySelectorAll(`.btnPowerssub`);
+
 menubtn.addEventListener("click", () => {
   btnline1.classList.toggle(`open`);
   btnline2.classList.toggle(`open`);
@@ -47,6 +50,12 @@ btnTimes.addEventListener("click", () => {
 
 btnDivision.addEventListener("click", () => {
   btnDivisionSub.forEach((sub) => {
+    sub.classList.toggle(`hidden`);
+  });
+});
+
+btnPowers.addEventListener("click", () => {
+  btnPowersSub.forEach((sub) => {
     sub.classList.toggle(`hidden`);
   });
 });
