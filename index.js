@@ -22,6 +22,9 @@ const btnDivisionSub = document.querySelectorAll(`.btnDivisionsub`);
 const btnPowers = document.querySelector(`.btnPowers`);
 const btnPowersSub = document.querySelectorAll(`.btnPowerssub`);
 
+const btnVocab = document.querySelector(`.btnVocab`);
+const btnVocabSub = document.querySelectorAll(`.btnVocabsub`);
+
 menubtn.addEventListener("click", () => {
   btnline1.classList.toggle(`open`);
   btnline2.classList.toggle(`open`);
@@ -56,6 +59,12 @@ btnDivision.addEventListener("click", () => {
 
 btnPowers.addEventListener("click", () => {
   btnPowersSub.forEach((sub) => {
+    sub.classList.toggle(`hidden`);
+  });
+});
+
+btnVocab.addEventListener("click", () => {
+  btnVocabSub.forEach((sub) => {
     sub.classList.toggle(`hidden`);
   });
 });
