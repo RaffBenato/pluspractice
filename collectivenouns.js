@@ -4,6 +4,10 @@ const word1El = document.querySelector(`.word1`);
 const btnAnswersEl = document.querySelectorAll(`.btn-n`);
 const correctScoreEl = document.querySelector(`.correctscore`);
 const wrongScoreEl = document.querySelector(`.wrongscore`);
+const btnMistakesEl = document.querySelector(`.btn-mistakes`);
+const btnBackEl = document.querySelector(`.btn-back`);
+const gameEl = document.querySelectorAll(`.game`);
+const containerEl = document.querySelector(`.container`);
 
 let correctScore = 0;
 let wrongScore = 0;
@@ -13,9 +17,9 @@ let wrongAnswer1;
 let wrongAnswer2;
 let answers = [];
 let btnLabels = [];
-let words;
+let mistakes = [];
 
-words = [
+let words = [
   {
     word1: "bunch",
     word2: "flowers",
@@ -332,9 +336,50 @@ for (let i = 0; i < btnAnswersEl.length; i++) {
     } else {
       wrongScore++;
       wrongScoreEl.textContent = wrongScore;
+      mistakes.push({ word1: correctWord, word2: correctAnswer });
     }
     pickRandomNumbers();
   });
 }
+
+btnMistakesEl.addEventListener("click", () => {
+  if (wrongScore > 0) {
+    gameEl.forEach((game) => {
+      game.classList.add(`hidden`);
+    });
+
+    mistakes.forEach(function (item, i) {
+      const htmlCode = `
+      <div class="segment">
+      <div class="mistakeword">A ${item.word1} of ${item.word2}</div>
+      </div>`;
+      containerEl.insertAdjacentHTML(`beforeend`, htmlCode);
+    });
+
+    const segmentEl = document.querySelectorAll(`.segment`);
+    segmentEl.forEach((segment) => {
+      segment.classList.remove(`hidden`);
+    });
+
+    btnMistakesEl.classList.add(`hidden`);
+    btnBackEl.classList.remove(`hidden`);
+  }
+});
+
+btnBackEl.addEventListener("click", () => {
+  gameEl.forEach((game) => {
+    game.classList.remove(`hidden`);
+  });
+
+  const segmentEl = document.querySelectorAll(`.segment`);
+  segmentEl.forEach((segment) => {
+    segment.classList.add(`hidden`);
+  });
+
+  btnBackEl.classList.add(`hidden`);
+  btnMistakesEl.classList.remove(`hidden`);
+
+  mistakes = [];
+});
 
 pickRandomNumbers();
