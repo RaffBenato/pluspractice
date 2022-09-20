@@ -21,275 +21,275 @@ let mistakes = [];
 
 let words = [
   {
-    word1: "bunch",
+    word1: "A bunch",
     word2: "flowers",
   },
   {
-    word1: "cast",
+    word1: "A cast",
     word2: "actors",
   },
   {
-    word1: "trickle",
+    word1: "A trickle",
     word2: "customers",
   },
   {
-    word1: "board",
+    word1: "A board",
     word2: "directors",
   },
   {
-    word1: "panel",
+    word1: "A panel",
     word2: "experts",
   },
   {
-    word1: "bevy",
+    word1: "A bevy",
     word2: "girls",
   },
   {
-    word1: "dinasty",
+    word1: "A dinasty",
     word2: "kings",
   },
   {
-    word1: "gang",
+    word1: "A gang",
     word2: "labourers",
   },
   {
-    word1: "body",
+    word1: "A body",
     word2: "men",
   },
   {
-    word1: "band",
+    word1: "A band",
     word2: "musicians",
   },
   {
-    word1: "crowd",
+    word1: "A crowd",
     word2: "people",
   },
   {
-    word1: "team",
+    word1: "A team",
     word2: "players",
   },
   {
-    word1: "patrol",
+    word1: "A patrol",
     word2: "policemen",
   },
   {
-    word1: "class",
+    word1: "A class",
     word2: "pupils",
   },
   {
-    word1: "mob",
+    word1: "A mob",
     word2: "rioters",
   },
   {
-    word1: "crew",
+    word1: "A crew",
     word2: "sailors",
   },
   {
-    word1: "horde",
+    word1: "A horde",
     word2: "savages",
   },
   {
-    word1: "gaggle",
+    word1: "A gaggle",
     word2: "sightseers",
   },
   {
-    word1: "choir",
+    word1: "A choir",
     word2: "singers",
   },
   {
-    word1: "army",
+    word1: "An army",
     word2: "soldiers",
   },
   {
-    word1: "tribe",
+    word1: "A tribe",
     word2: "natives",
   },
   {
-    word1: "congregation",
+    word1: "A congregation",
     word2: "worshippers",
   },
   {
-    word1: "zoo",
+    word1: "A zoo",
     word2: "animals",
   },
   {
-    word1: "hive",
+    word1: "A hive",
     word2: "bees",
   },
   {
-    word1: "flock",
+    word1: "A flock",
     word2: "birds",
   },
   {
-    word1: "herd",
+    word1: "A herd",
     word2: "cattle",
   },
   {
-    word1: "brood",
+    word1: "A brood",
     word2: "chickens",
   },
   {
-    word1: "school",
+    word1: "A school",
     word2: "dolphins",
   },
   {
-    word1: "catch",
+    word1: "A catch",
     word2: "fish",
   },
   {
-    word1: "swarm",
+    word1: "A swarm",
     word2: "flies",
   },
   {
-    word1: "skulk",
+    word1: "A skulk",
     word2: "foxes",
   },
   {
-    word1: "colony",
+    word1: "A colony",
     word2: "gulls",
   },
   {
-    word1: "string",
+    word1: "A string",
     word2: "horses",
   },
   {
-    word1: "pack",
+    word1: "A pack",
     word2: "hounds",
   },
   {
-    word1: "litter",
+    word1: "A litter",
     word2: "kittens",
   },
   {
-    word1: "pride",
+    word1: "A pride",
     word2: "lions",
   },
   {
-    word1: "plague",
+    word1: "A plague",
     word2: "locusts",
   },
   {
-    word1: "nest",
+    word1: "A nest",
     word2: "mice",
   },
   {
-    word1: "troop",
+    word1: "A troop",
     word2: "monkeys",
   },
   {
-    word1: "rookery",
+    word1: "A rookery",
     word2: "penguins",
   },
   {
-    word1: "pod",
+    word1: "A pod",
     word2: "seals",
   },
   {
-    word1: "squadron",
+    word1: "A squadron",
     word2: "planes",
   },
   {
-    word1: "round",
+    word1: "A round",
     word2: "applause",
   },
   {
-    word1: "crop",
+    word1: "A crop",
     word2: "apples",
   },
   {
-    word1: "quiver",
+    word1: "A quiver",
     word2: "arrows",
   },
   {
-    word1: "bunch",
+    word1: "A bunch",
     word2: "bananas",
   },
   {
-    word1: "set",
+    word1: "A set",
     word2: "books",
   },
   {
-    word1: "crate",
+    word1: "A crate",
     word2: "bottles",
   },
   {
-    word1: "batch",
+    word1: "A batch",
     word2: "bread",
   },
   {
-    word1: "hail",
+    word1: "A hail",
     word2: "bullets",
   },
   {
-    word1: "deck",
+    word1: "A deck",
     word2: "cards",
   },
   {
-    word1: "fleet",
+    word1: "A fleet",
     word2: "cars",
   },
   {
-    word1: "bale",
+    word1: "A bale",
     word2: "cotton",
   },
   {
-    word1: "wad",
+    word1: "A wad",
     word2: "notes",
   },
   {
-    word1: "cluster",
+    word1: "A cluster",
     word2: "diamonds",
   },
   {
-    word1: "chest",
+    word1: "A chest",
     word2: "drawers",
   },
   {
-    word1: "chain",
+    word1: "A chain",
     word2: "events",
   },
   {
-    word1: "block",
+    word1: "A block",
     word2: "flats",
   },
   {
-    word1: "basket",
+    word1: "A basket",
     word2: "fruit",
   },
   {
-    word1: "orchard",
+    word1: "An orchard",
     word2: "fruit trees",
   },
   {
-    word1: "stack",
+    word1: "A stack",
     word2: "hay",
   },
   {
-    word1: "range",
+    word1: "A range",
     word2: "mountains",
   },
   {
-    word1: "ream",
+    word1: "A ream",
     word2: "paper",
   },
   {
-    word1: "heap",
+    word1: "A heap",
     word2: "rubbish",
   },
   {
-    word1: "flotilla",
+    word1: "A flotilla",
     word2: "ships",
   },
   {
-    word1: "column",
+    word1: "A column",
     word2: "smoke",
   },
   {
-    word1: "flight",
+    word1: "A flight",
     word2: "stairs",
   },
   {
-    word1: "forest",
+    word1: "A forest",
     word2: "trees",
   },
 ];
@@ -322,7 +322,7 @@ function pickRandomWord(word1, word2, word3) {
     ];
   }
 
-  word1El.textContent = `A ${correctWord} of`;
+  word1El.textContent = `${correctWord} of`;
   btnAnswersEl[0].textContent = answers[0];
   btnAnswersEl[1].textContent = answers[1];
   btnAnswersEl[2].textContent = answers[2];
@@ -351,7 +351,7 @@ btnMistakesEl.addEventListener("click", () => {
     mistakes.forEach(function (item, i) {
       const htmlCode = `
       <div class="segment">
-      <div class="mistakeword">A ${item.word1} of ${item.word2}</div>
+      <div class="mistakeword">${item.word1} of ${item.word2}</div>
       </div>`;
       containerEl.insertAdjacentHTML(`beforeend`, htmlCode);
     });
